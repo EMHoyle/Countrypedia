@@ -20,10 +20,10 @@
         <nav>
           <a href="#" id="icon" class="icon"><i class="fas fa-bars menu-btn"></i></a>
           <div class="link one" id="link">
-            <a href="">Home</a>
-            <a href="">About</a>
-            <a href="">Countries</a>
-            <a href="">Contact</a>
+            <a id="nameBtn" href="#">Home</a>
+            <a id="nameBtn" href="#about-section">About</a>
+            <a id="nameBtn" href="#countries-section">Countries</a>
+            <a id="nameBtn" href="#footer-section">Contact</a>
           </div>
         </nav>
         <div class="text">
@@ -51,7 +51,8 @@
         </svg>
       </div>
     </div>
-    <section>
+
+    <section id="about-section">
       <div class="sectionTitle"><h2>About this App</h2></div>
       <p class="aboutParagraph">
         This app was built to give you the opportunity to find out relevant
@@ -59,7 +60,8 @@
         about your next destination.
       </p>
     </section>
-    <section>
+
+    <section id="countries-section">
       <div class="sectionTitle"><h2>Where do you want to go...?</h2></div>
       <div class="countryForm">
         <form class="form-search" id="form">
@@ -81,6 +83,16 @@
       </div>
         <section class='grid' id='countries' ></section>
     </section>
+    
+    <section id="footer-section" class="footer">
+      <h2>Do you Like it?</h2>
+      <span>Contact Me</span>
+      <div class='content'>
+        <a target="_blank" href="https://github.com/EMHoyle"><i class="fab fa-github"></i></a>
+        <a target="_blank" href="https://www.linkedin.com/in/edgardohoyle/"><i class="fab fa-linkedin"></i></a>
+      </div>
+    </section>
+
     <script src="js/fetch.js"></script>
     <script src="js/dark-mode.js"></script>
     <script src="js/menu.js"></script>
