@@ -1,0 +1,15 @@
+/* ///ABOUT/// */
+
+.aboutParagraph {
+  color: var(--color-text-secondary);
+  font-size: 30px;
+  text-align: center;
+}
+
+.sectionTitle {
+  color: var(--color-text);
+  font-size: 40px;
+  padding-top: 100px;
+  text-align: center;
+  text-shadow: 5px 5px 5px black;
+}

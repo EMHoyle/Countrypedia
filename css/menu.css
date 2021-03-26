@@ -1,0 +1,42 @@
+/* ///MENU/// */
+
+.menu-btn {
+  color: var(--color-btn);
+}
+
+.link {
+  align-items: flex-start;
+  background: #ad5389;
+  background: -webkit-linear-gradient(to right, #3c1053, #ad5389);
+  background: linear-gradient(to right, #3c1053, #ad5389);
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  justify-content: space-around;
+  position: fixed;
+  right: 0;
+  transition: all 1s ease;
+  top: 0;
+  width: 100%;
+}
+
+.link a {
+  margin-left: 150px;
+  transition: all 0.5s;
+}
+
+.link a:hover {
+  letter-spacing: 20px;
+  text-shadow: 50px 50px 1px rgba(0, 0, 0, 0.5);
+  transition: all 0.5s;
+}
+
+.one {
+  clip-path: circle(0% at 0 0);
+  -webkit-clip-path: circle(0% at 0 0);
+}
+
+.two {
+  clip-path: circle(90% at 0 0);
+  -webkit-clip-path: circle(90% at 0 0);
+}

@@ -1,0 +1,32 @@
+/* ///NAVBAR/// */
+
+nav {
+  display: flex;
+  justify-content: flex-start;
+  left: 20px;
+  position: fixed;
+  top: 20px;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.icon {
+  display: block;
+  z-index: 100000000;
+  animation: moveToLeft 1s ease-in;
+}
+
+@keyframes moveToLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-100px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
+}

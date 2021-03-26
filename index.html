@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Countrypedia</title>
+    <!-- STYLES -->
+    <link rel="stylesheet" href="style.css" />
+    <!-- ICONS -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <header>
+      <div class="container">
+        <nav>
+          <a href="#" id="icon" class="icon"><i class="fas fa-bars menu-btn"></i></a>
+          <div class="link one" id="link">
+            <a href="">Home</a>
+            <a href="">About</a>
+            <a href="">Countries</a>
+            <a href="">Contact</a>
+          </div>
+        </nav>
+        <div class="text">
+          <h1>Countrypedia</h1>
+          <h2>All countries in one place.</h2>
+          <button class="btn-dark">
+            <i class="far fa-moon"></i></i> Dark Mode
+          </button>
+        </div>
+        <div class="earthContainer">
+          <div class="earth"></div>
+        </div>
+      </div>
+    </header>
+    <div class="wave">
+      <div style="height: 150px; overflow: hidden">
+        <svg
+          viewBox="0 0 500 150"
+          preserveAspectRatio="none"
+          style="height: 100%; width: 100%"
+        >
+          <path
+            d="M0.00,49.98 C150.00,150.00 349.20,-50.00 500.00,49.98 L500.00,150.00 L0.00,150.00 Z"
+          ></path>
+        </svg>
+      </div>
+    </div>
+    <section>
+      <div class="sectionTitle"><h2>About this App</h2></div>
+      <p class="aboutParagraph">
+        This app was built to give you the opportunity to find out relevant
+        information about the country that interests you and why not; maybe
+        about your next destination.
+      </p>
+    </section>
+    <section>
+      <div class="sectionTitle"><h2>Where do you want to go...?</h2></div>
+      <div class="countryForm">
+        <form class="form-search" id="form">
+            <i class="fas fa-search"></i>
+            <input id="inputText" type="text" placeholder="Search for a country...">
+        </form>
+        <div class="dropdown" id="filter">
+            Filter by Region
+            <i class="fas fa-chevron-down"></i>
+            <ul>
+                <li>All</li>
+                <li>Africa</li>
+                <li>Americas</li>
+                <li>Asia</li>
+                <li>Europe</li>
+                <li>Oceania</li>
+            </ul>
+        </div>
+      </div>
+        <section class='grid' id='countries' ></section>
+    </section>
+    <script src="js/fetch.js"></script>
+    <script src="js/dark-mode.js"></script>
+    <script src="js/menu.js"></script>
+    <script src="js/filter.js"></script>
+    <script src="js/search.js"></script>
+  </body>
+</html>
